@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Web Devit Web Programing</title>
+</head>
+
+<style>
+    .container { 
+    display: flex; 
+}
+.sidebar {
+   background: #2b1640;
+   width: 220px;
+   height: 100vh;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+}
+
+.sidebar h3 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    display: block;
+    color: #b8a9c9;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background: #3d2555;
+    color: white;
+}
+
+.content {
+    flex: 1;
+    background: #f5f5f5;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+.menunggu {
+    background: #fff3cd;
+    border: 1px solid orange;
+}
+
+.selesai {
+    background: #daedda;
+    border: 1px solid green;
+}
+
+.btn-tambahan {
+    background: #2a1235;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 15px;
+    float: right;
+}
+
+</style>
+<body>
+    <div class="container">
+<div class="sidebar">
+    <h3>Salon Devit</h3>
+    <a href="#" class="active">Reservasi</a>
+    <a href="#">Transaksi</a>
+    <a href="#">Treatment</a>
+    <a href="#">Pelanggan</a>
+    </div>
+
+    <div class="content">
+        <h2>Reservasi</h2>
+        <button class="btn-tambah">Tambah Reservasi</button>
+<table>
+    <tr>
+        <th>Kode</th><th>Pelanggan</th><th>Treatment</th><th>Jam</th><th>Status</th><th>Aktif</th>
+    </tr>
+    <tr>
+        <td>RS-1043</td><td>Devit</td><td>Gunting Cepak</td><td>17:00</td>
+        <td><span class="Status Menunggu">Status Menunggu</span></td>
+        <td>Konfirmasi - Tolak</td>
+    </tr>
+</table>
+</div>
+    </div>
+</body>
+</html>
